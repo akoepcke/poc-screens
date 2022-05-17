@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 body, html, #root {
-    @apply h-full
+    @apply h-full overflow-hidden
+}
+
+html {
+    @apply pb-safe-bottom 
 }
 
 #root {
-    @apply pb-safe-bottom
+    @apply relative;
 }
